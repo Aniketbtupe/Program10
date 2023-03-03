@@ -1,0 +1,29 @@
+package day7;
+
+	abstract class mumbai_rules 
+	{
+	abstract void speedlimit();
+	abstract void rashdriving();
+	abstract void rule();
+	}
+	class seltos extends mumbai_rules
+	{
+	void rule()
+	{
+		System.out.println("go slow");
+	}
+	void rashdriving()
+	{
+		System.out.println("alert voice");
+	}
+	void speedlimit()
+	{
+		System.out.println("speed should not be more than 60km/hr");
+	}
+	public static void main(String[] args) {
+		seltos obj= new seltos();
+		obj.rule();
+		obj.rashdriving();
+		obj.speedlimit();
+	}
+}
